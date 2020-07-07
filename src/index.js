@@ -86,18 +86,6 @@ available.forEach((api, index) => {
     sensors[api.name] = 2 ** index;
 });
 
-const checkPermissions = async () => {
-    const result = {};
-    await Promise.all([
-        "accelerometer",
-        "gyroscope",
-        "magnetometer",
-    ].map(name => navigator.permissions.query({
-        name,
-    }).then(({ state }) => result[name] = state)));
-    return result;
-};
-
 /**
  * @typedef {Object} Options
  * @prop {Number} precision - Number of digits to appear after the decimal point (between 0 and 20)
@@ -109,9 +97,7 @@ const checkPermissions = async () => {
  * @param {Options} options - Some options
  * @return {Promise<{stop: stop}>}
  */
-const listen = async (mask, callback, options) => {
-    await checkPermissions();
-
+const listen = (mask, callback, options) => {
     const { precision, frequency } = {
         ...defaultOptions,
         ...options,
