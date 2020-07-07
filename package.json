@@ -1,0 +1,30 @@
+{
+    "name": "vibrisse",
+    "version": "0.0.0",
+    "description": "Swiftly read device spacial sensors",
+    "main": "src/index.js",
+    "eslintConfig": {
+        "extends": "@gmartigny/eslint-config"
+    },
+    "keywords": [
+        "gyroscope",
+        "accelerometer",
+        "sensor",
+        "handheld",
+        "device"
+    ],
+    "author": "GMartigny",
+    "license": "MIT",
+    "devDependencies": {
+        "@gmartigny/eslint-config": "^1.5.0",
+        "eslint": "^7.4.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GMartigny/vibrisse.git"
+    },
+    "bugs": {
+        "url": "https://github.com/GMartigny/vibrisse/issues"
+    },
+    "homepage": "https://github.com/GMartigny/vibrisse#readme"
+}
