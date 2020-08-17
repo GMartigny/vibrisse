@@ -1,6 +1,6 @@
 {
     "name": "vibrisse",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Swiftly read device spacial sensors",
     "main": "src/index.js",
     "eslintConfig": {
